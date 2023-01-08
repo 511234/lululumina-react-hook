@@ -6,7 +6,7 @@ import { useLocalStorage } from './hooks/use-local-storage'
 
 function App() {
   const [currentState, toggle] = useToggle()
-  const [inputName, saveName] = useLocalStorage('form-name')
+  const [inputName, saveName] = useLocalStorage('form-name', 'Peter')
 
   return (
     <div className="App">
